@@ -1,12 +1,17 @@
 import React from 'react';
 import './App.css';
 
-import { MyFancyComponent } from "./components/Map"
+import { MapWithGroundOverlay } from "./components/MapWithGroundOverlay"
 
 function App() {
   return (
     <div className="App">
-      <MyFancyComponent/>
+      <MapWithGroundOverlay
+        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZOrQwopojhrGf9A1NHnPmBpZf6rWpoK8&v=3.exp&libraries=geometry,drawing,places"
+        loadingElement={<div style={{ height: `100%` }} />}
+        containerElement={<div style={{ height: `400px` }} />}
+        mapElement={<div style={{ height: `100%` }} />}
+      />
     </div>
   );
 }
