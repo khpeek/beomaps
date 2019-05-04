@@ -1,17 +1,17 @@
 import React from 'react'
 import { MapWithGroundOverlay } from './MapWithGroundOverlay'
-import StepSlider from './StepSlider'
+import Slider from '@material-ui/lab/Slider'
 
 export class AdjustableGroundoverlay extends React.PureComponent {
   constructor(props, context) {
     super(props, context)
     this.state = {opacity: 0.5}
-    this.handleClick = this.handleClick.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleClick() {
+  handleChange(event, value) {
     this.setState(state => ({
-      opacity: 1.0
+      opacity: value
     }));
   }
 
@@ -25,10 +25,12 @@ export class AdjustableGroundoverlay extends React.PureComponent {
           mapElement={<div style={{ height: `100%` }} />}
           opacity={this.state.opacity}
         />
-        <button onClick={this.handleClick}>
-          {`Opacity: ${this.state.opacity}`}
-        </button>
-        <StepSlider/>
+        <Slider
+          value={this.state.opacity}
+          min={0}
+          max={1}
+          onChange={this.handleChange}
+        />
       </div>
     );
   }
