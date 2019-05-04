@@ -2,7 +2,7 @@
 
 import React from "react"
 import { compose } from "recompose"
-import { 
+import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
@@ -22,7 +22,7 @@ export const MapWithGroundOverlay = compose(
         new google.maps.LatLng(40.712216, -74.22655),
         new google.maps.LatLng(40.773941, -74.12544)
       )}
-      defaultOpacity={.5}
+      defaultOpacity={props.opacity}
     />
   </GoogleMap>
 );
