@@ -1,12 +1,12 @@
 /* global google */
 
-import React from "react"
-import { compose } from "recompose"
+import React from 'react'
+import { compose } from 'recompose'
 import {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
-  GroundOverlay } from "react-google-maps"
+  GroundOverlay } from 'react-google-maps'
 
 export const MapWithGroundOverlay = compose(
   withScriptjs,
