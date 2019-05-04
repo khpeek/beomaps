@@ -22,7 +22,7 @@ export const MapWithGroundOverlay = compose(
         new google.maps.LatLng(40.712216, -74.22655),
         new google.maps.LatLng(40.773941, -74.12544)
       )}
-      defaultOpacity={props.opacity}
+      opacity={props.opacity}
     />
   </GoogleMap>
 );
