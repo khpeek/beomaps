@@ -1,5 +1,6 @@
-import React from "react"
-import { MapWithGroundOverlay } from "./MapWithGroundOverlay"
+import React from 'react'
+import { MapWithGroundOverlay } from './MapWithGroundOverlay'
+import StepSlider from './StepSlider'
 
 export class AdjustableGroundoverlay extends React.PureComponent {
   constructor(props, context) {
@@ -27,6 +28,7 @@ export class AdjustableGroundoverlay extends React.PureComponent {
         <button onClick={this.handleClick}>
           {`Opacity: ${this.state.opacity}`}
         </button>
+        <StepSlider/>
       </div>
     );
   }
