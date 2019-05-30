@@ -1,3 +1,13 @@
+# Beo Maps
+This (work-in-progress) project is meant to make it easier to geo-reference PDF maps and use them as overlays in Google Maps.
+
+![Overlay Map](https://i.imgur.com/yiaHDQG.png)
+
+## Setup
+For the maps to render, create a `.env` file in the project directory and an environment variable for your Google Maps API key:
+```
+REACT_APP_GOOGLE_MAPS_API_KEY=<your Google Maps API key>
+```
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
