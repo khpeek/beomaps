@@ -3,6 +3,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import './App.css';
 import AdjustableGroundoverlay from './components/AdjustableGroundoverlay'
+import { MapWithASearchBox } from './components/MapWithASearchBox'
 
 require('dotenv').config()
 
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <CssBaseline/>
       <Container>
+        <MapWithASearchBox/>
         <AdjustableGroundoverlay/>
       </Container>
     </div>
