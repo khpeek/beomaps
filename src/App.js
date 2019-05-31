@@ -2,7 +2,7 @@ import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import './App.css';
-import { AdjustableGroundoverlay } from './components/AdjustableGroundoverlay'
+import AdjustableGroundoverlay from './components/AdjustableGroundoverlay'
 
 require('dotenv').config()
 
