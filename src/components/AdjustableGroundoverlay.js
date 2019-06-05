@@ -41,6 +41,7 @@ class AdjustableGroundoverlay extends React.PureComponent {
             containerElement={<div style={{ height: `600px` }} />}
             mapElement={<div style={{ height: `100%` }} />}
             opacity={this.state.opacity}
+            defaultBounds={this.props.defaultBounds}
           />
         </Grid>
         <Grid item xs={6}>

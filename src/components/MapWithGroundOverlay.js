@@ -1,5 +1,3 @@
-/* global google */
-
 import React from 'react'
 import { compose } from 'recompose'
 import {
@@ -18,10 +16,7 @@ export const MapWithGroundOverlay = compose(
   >
     <GroundOverlay
       defaultUrl="https://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg"
-      defaultBounds={new google.maps.LatLngBounds(
-        new google.maps.LatLng(40.712216, -74.22655),
-        new google.maps.LatLng(40.773941, -74.12544)
-      )}
+      defaultBounds={props.defaultBounds}
       opacity={props.opacity}
     />
   </GoogleMap>

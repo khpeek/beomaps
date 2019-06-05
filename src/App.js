@@ -11,7 +11,14 @@ function App() {
     <div className="App">
       <CssBaseline/>
       <Container>
-        <AdjustableGroundoverlay/>
+        <AdjustableGroundoverlay
+          defaultBounds={{
+            north: 40.773941,
+            south: 40.712216,
+            east: -74.12544,
+            west: -74.22655
+          }}
+        />
       </Container>
     </div>
   );
