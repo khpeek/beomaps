@@ -1,5 +1,5 @@
 # Beo Maps
-This (work-in-progress) project is meant to make it easier to geo-reference PDF maps and use them as overlays in Google Maps.
+This (work-in-progress) project is meant to make it easier to geo-reference PDF maps and use them as overlays in Google Maps. Check it out at https://khpeek.github.io/beomaps/.
 
 ![Overlay Map](https://i.imgur.com/yiaHDQG.png)
 
